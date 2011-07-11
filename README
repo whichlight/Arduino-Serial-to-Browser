@@ -9,3 +9,15 @@ Also feeds in the index.html
 index.html - javascript to get the serial data and display it. 
 
 simple_serial - the arduino script, just reads from one of the analog pins
+
+To get everything running: 
+
+1. download bottle and install it 
+2. plug in the arduino to your laptop and upload the Arduino code
+3. run the python script in terminal (python browser_vis_serial.py)
+4. enter in the localhost into the browser
+
+This will pull up the web page that has the serial out from the arduino displayed. 
+Add a potentiometer to A0 on the Arduino, or read in from a few inputs, and vis 
+it all. Anything that you print from the Arduino code will be displayed in the browser.
+Add graphs, or dots that move around!  
