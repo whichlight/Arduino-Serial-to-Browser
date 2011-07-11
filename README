@@ -1,0 +1,11 @@
+Uses bottle.py to set up the local server
+
+browser_vis_serial.py reads in the arduino data, sends it through http.  bottle
+converts python dicts into JSON. 
+
+Also feeds in the index.html
+
+
+index.html - javascript to get the serial data and display it. 
+
+simple_serial - the arduino script, just reads from one of the analog pins
