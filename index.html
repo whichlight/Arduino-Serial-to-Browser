@@ -1,0 +1,64 @@
+<html>
+	
+	<head>
+		<title> Arduino Serial to Browser </title> 
+		<!-- by Kawandeep Virdee www.whichlight.com -->
+		<script src="http://code.jquery.com/jquery-latest.js"></script> 
+		<style type="text/css">
+			body{text-align:center;
+			background-color:#91FF8B;
+			}
+		#vals{
+		font-family:Helvetica;
+		font-weight : 100;
+		font-size : 200px;
+		color:#00A6FF;
+	}
+
+	#title{
+		font-family:Futura;
+		font-size:100px;
+		font-weight:900;
+	color:white;	
+	}
+	
+	#footer, #footer a{
+	font-family: Helvetica;
+	font-size: 20px;
+	color: gray;
+	}
+	
+	
+	
+	
+
+		</style>
+</head>
+
+	<body>
+	<div id='title'>
+ARDUINO SERIAL TO BROWSER
+
+	</div>
+		<div id='vals'> </div>
+		<script type = "text/javascript">
+			var allVals = [];
+			function getArduinoVals(){	
+				
+				$.getJSON('/arduino/', function(data){
+						
+			$('#vals').html(data.val);			
+						});
+			 	
+			//	$('<div>', {'id' : 'val', html : a.responseText}).appendTo('#vals');
+						
+				t = setTimeout("getArduinoVals()",500); //second argument is the milliseconds delay
+			}	
+	
+			getArduinoVals();
+
+		</script>
+
+<div id='footer'>by Kawandeep Virdee at <a href="http://www.whichlight.com">whichlight </a> </div>
+	</body>
+</html> 
