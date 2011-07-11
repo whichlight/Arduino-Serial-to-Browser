@@ -19,4 +19,5 @@ To get everything running:
 
 This will pull up the web page that has the serial out from the arduino displayed. 
 Add a potentiometer to A0 on the Arduino, or read in from a few inputs, and vis 
-it all. Anything that you print from the Arduino code will be displayed in the browser.  
+it all. Anything that you print from the Arduino code will be displayed in the browser.
+Add graphs, or dots that move around!  
