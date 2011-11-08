@@ -1,15 +1,3 @@
-Uses bottle.py to set up the local server
-
-browser_vis_serial.py reads in the arduino data, sends it through http.  bottle
-converts python dicts into JSON. 
-
-Also feeds in the index.html
-
-
-index.html - javascript to get the serial data and display it. 
-
-simple_serial - the arduino script, just reads from one of the analog pins
-
 To get everything running: 
 
 1. download bottle and install it 
@@ -20,4 +8,16 @@ To get everything running:
 This will pull up the web page that has the serial out from the arduino displayed. 
 Add a potentiometer to A0 on the Arduino, or read in from a few inputs, and vis 
 it all. Anything that you print from the Arduino code will be displayed in the browser.
-Add graphs, or dots that move around!  
+Add graphs, or dots that move around! 
+
+more deets: 
+
+Uses bottle.py to set up the local server
+
+browser_vis_serial.py reads in the arduino data, sends it through http.  bottle
+converts python dicts into JSON. this script also feeds in the index.html
+
+index.html - javascript to get the serial data and display it. 
+
+simple_serial - the arduino script, just reads from one of the analog pins
+ 
